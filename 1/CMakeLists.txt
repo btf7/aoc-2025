@@ -2,14 +2,14 @@ cmake_minimum_required(VERSION 3.31.6) # Only tested version
 
 project(solution)
 
-set(CXX_STANDARD 17)
+set(CXX_STANDARD 20)
 set(CXX_STANDARD_REQUIRED True)
 set(CXX_EXTENSIONS False)
 
-if (MSVC)
-    add_compile_options(/W4)
+if (CMAKE_CXX_COMPILER_ID STREQUAL GNU)
+	add_compile_options(-Wall -Wextra -Wpedantic -Og -g3)
 else()
-    add_compile_options(-Wall -Wextra -Wpedantic)
+	message(NOTICE "Compiler is not g++, using default CMake options")
 endif()
 
 add_executable(1 1.cpp)
