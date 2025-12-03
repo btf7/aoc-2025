@@ -31,7 +31,7 @@ int main(int argc, char* argv[]) {
 			const std::string str = std::to_string(i);
 
 			bool valid{ true };
-			for (int repeats = 2; repeats <= str.length(); repeats++) {
+			for (int repeats = 2; repeats <= static_cast<int>(str.length()); repeats++) {
 				if (str.length() % repeats != 0) continue;
 
 				valid = false;
