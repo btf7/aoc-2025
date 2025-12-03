@@ -15,7 +15,7 @@ int main(int argc, char* argv[]) {
 	for (const std::string& line : lines) {
 		if (line.length() < 2) throw std::runtime_error("Bad input file - line must contain at least 2 characters");
 		for (const char& c : line) {
-			if (c < '0' || c > '9') throw std::runtime_error("Bad input file - line must consist of numbers");
+			if (!isdigit(c)) throw std::runtime_error("Bad input file - line must consist of numbers");
 		}
 
 		int maxI{ 0 };

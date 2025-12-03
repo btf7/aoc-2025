@@ -15,24 +15,8 @@ int main(int argc, char* argv[]) {
 	for (const std::string& line : lines) {
 		if (line.length() < 12) throw std::runtime_error("Bad input file - line must contain at least 12 characters");
 		for (const char& c : line) {
-			if (c < '0' || c > '9') throw std::runtime_error("Bad input file - line must consist of numbers");
+			if (!isdigit(c)) throw std::runtime_error("Bad input file - line must consist of numbers");
 		}
-
-		// int maxI{ 0 };
-		// for (unsigned int i = 1; i < line.length() - 1; i++) {
-		// 	if (line[i] > line[maxI]) maxI = i;
-		// }
-
-		// size_t joltage{ (line[maxI] - '0') * 10 };
-
-		// maxI++;
-
-		// for (unsigned int i = maxI + 1; i < line.length(); i++) {
-		// 	if (line[i] > line[maxI]) maxI = i;
-		// }
-
-		// joltage += line[maxI] - '0';
-		// total += joltage;
 
 		size_t joltage{ 0 };
 		int startI{ 0 };
