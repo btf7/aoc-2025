@@ -1,7 +1,6 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
-#include <cctype>
 
 std::vector<std::string> readFileLines(const std::string& filePath);
 
