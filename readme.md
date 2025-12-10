@@ -8,7 +8,7 @@ My aim with AoC is not to write the fastest and most optimised programs, but jus
 ## Build
 
 1.	Some solutions (for example day 8 part 1) have a parameter that changes between the test input and real input. For day 8 part 1, this is changing between making 10 pairs or 1000 pairs.
-	In any day where this is needed, the parameter will be a `constexpr` at the top of the file, make sure you update this to match before building.
+	In any solution where this is needed, the parameter will be set in a `constexpr` variable at the top of the file. Make sure you update this to match before building.
 
 1.	From the folder for whichever day you want to build, create a build folder
 	```
