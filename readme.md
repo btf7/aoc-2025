@@ -2,9 +2,8 @@
 
 All of my solutions for AoC 2025, written in C++ and built with CMake.
 
-If any of my solutions are strange or long-winded, it's because I made no reference to anyone else's solutions and didn't google any algorithms while solving each problem.
-If I spend a lot of time doing something that the standard library has a function for, it's because I'm relatively new to the language and either don't know it exists or completely forgot about it.
-My aim with AoC is not to find the best algorithms and write the most optimised functions, but just to get 24/24 stars.
+If any of my solutions are strange or long-winded, it's because I made no reference to anyone else's solutions, didn't google any algorithms, am relatively new to the language, and copied code from previous days in the interest of saving time.
+My aim with AoC is not to write the fastest and most optimised programs, but just to get all of the stars.
 
 ## Build
 
